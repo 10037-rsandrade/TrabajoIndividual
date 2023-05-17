@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="stylesheet" href="../css/estilos3.css">
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="contenedor-formularios">
+<form action="" class="FormProducto">
+  <fieldset>
+    <legend>Datos Básicos:</legend>
+    <label for="fname">Nombre del Producto:</label> <br>
+	  <input type="text" id="fname" name="fname"><br>
+    <label for="fname">Descripción:</label><br>
+    <textarea name="area1"></textarea><br>
+    <label for="foto">Foto:</label><br>
+    <input type="file"
+       id="avatar" name="foto"
+       accept="image/png, image/jpeg"><br>
+	    <input type="checkbox" name="checkbox1" value="opcion1" id="checkbox1_0" onclick="mostrarenviardatos()">
+	    Añadir información confidencial</label>
+	  <br>
+
+  </fieldset>
+
+
+
+  <fieldset>
+    <legend>DATOS ECONÓMICOS:</legend>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio"
+       min="10" max="100">
+    <label for="precio">Impuestos:</label>  
+		  <select name="imp" id="imp">
+		  <option value="imp12">12%</option>
+		  <option value="imp14">14%</option>
+		  <option value="imp0">0%</option>
+
+		</select>
+    <br>
+
+    <label for="promocion">Promoción:</label><br>
+   	<input type="radio" id="radioninguno" name="radioninguno" value="Ninguno">
+   	<label for="radioninguno">Ninguno</label>
+   	<br>
+   	<input type="radio" id="radiotransporte" name="radiotransporte" value="Transporte">
+   	<label for="radiotransporte">Transporte Gratuito</label>
+   	<br>
+   	<input type="radio" id="radiodescuento" name="radiodescuento" value="Descuento">
+   	<label for="radiodescuento">Descuento 5%</label>
+   	<br>
+
+  </fieldset>
+
+	<input type="submit" value="Guardar Cambios">
+	<input type="reset" value="Borrar los datos introducidos">
+</form>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link type="" rel="stylesheet" href="../css/estilos3.css" /> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form action="" method="post" name="FormContacto" id="formContacto" onsubmit="validarCampos()">
+        <div class="contacto">
+            <h2 style="text-align: center;">Contacto</h2>
+            <label for="">Correo Electrónico</label>
+            <br />
+            <input type="correo" id="correoValidar" placeholder="&#xf0e0; usuario@gmail.com" class="fa fa-envelope" />
+            <br />
+            <label for="">Fecha de Nacimiento</label>
+            <br />
+            <input type="date" /><br />
+            <label for="">Teléfono</label><br />
+            <input type="tel" id="telefonoValidar" placeholder="&#xf095; Telefono" class="fa fa-phone" /><br />
+            <input type="submit" value="Enviar" id="enviarContacto" onclick="desactivar()">
+
+        </div>
+    </form>
+    <script src="../js/contacto.js"></script>
+</body>
+
+</html>

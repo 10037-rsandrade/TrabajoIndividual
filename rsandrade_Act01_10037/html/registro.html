@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="stylesheet" href="../css/estilos3.css">
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="contenedor-formularios">
+<form action="" class="formulariod">
+  <fieldset>
+    <legend>DESCRIPCIÓN DE ENVÍO:</legend>
+    <label for="fname">Calle Principal:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Transversal:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+
+    <p>
+	  <label>
+	    <input type="checkbox" name="checkbox1" value="opcion1" id="checkbox1_0" onclick="mostrarenviardatos()">
+	    Entrega al propietario</label>
+	  <br>
+	  <label>
+	    <input type="checkbox" name="checkbox1_" value="opcion2" id="checkbox1_1" onclick="mostrar()">
+	    Entrega a un tercero.</label>
+	  <br>
+</p>
+	<select>
+		<option value="quito">Quito</option>
+		<option value="guayaquil">Guayaquil</option>
+	</select>
+	<br>
+	<br>
+	    <input type="submit" value="Enviar Datos" id="enviardatos">
+  </fieldset>
+</form>
+
+<form action="" class="formularioc" id="formularioc">
+  <fieldset>
+    <legend>INFORMACIÓN CONFIDENCIAL:</legend>
+    <label for="fname">Código Postal:</label>
+    <input type="text" id="fname" name="fname"><br>
+    <br>
+    <label for="fname">Referencia de la dirección:</label><br>
+    <textarea name="area1"></textarea><br>
+    
+	<input type="submit" value="Guardar">
+
+  </fieldset>
+</form>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
